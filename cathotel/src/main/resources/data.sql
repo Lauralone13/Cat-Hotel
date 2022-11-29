@@ -1,0 +1,13 @@
+insert into cat (id, name, sex, age, color, owner_known) values (101, 'Minki', 'female', 8, 'grey', false);
+insert into cat (id, name, sex, age, color, owner_known) values (102, 'Maja', 'female', 15, 'black-white', true);
+insert into cat (id, name, sex, age, color, owner_known) values (103, 'Horus', 'male', 14, 'black', true);
+insert into cat (id, name, sex, age, color, owner_known) values (104, 'Isis', 'female', 14, 'multicolored', true);
+insert into cat (id, name, sex, age, color, owner_known) values (105, 'Abu', 'male', 4, 'brown', false);
+insert into cat (id, name, sex, age, color, owner_known) values (106, 'Lilly', 'female', 2, 'white', false);
+insert into cat (id, name, sex, age, color, owner_known) values (107, 'Willow', 'female', 7, 'multicolored', false);
+insert into cat (id, name, sex, age, color, owner_known) values (108, 'Lucky', 'male', 3, 'red', true);
+insert into cat (id, name, sex, age, color, owner_known) values (109, 'Charlie', 'male', 6, 'brown', false);
+insert into cat (id, name, sex, age, color, owner_known) values (110, 'Snowball', 'male', 7, 'white', false);
+insert into cat (id, name, sex, age, color, owner_known) values (111, 'Twinko', 'male', 2, 'black', true);
+insert into cat (id, name, sex, age, color, owner_known) values (112, 'Minni', 'female', 9, 'grey', false);
+insert into cat (id, name, sex, age, color, owner_known) values (113, 'Silly', 'male', 11, 'brown-white', false);
