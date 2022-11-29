@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <meta charset="UTF-8">-->
+    <title>Add Cat Page</title>
+</head>
+<body>
+<form th:action="@{/cat/add}" th:object="${cat}" th:method="POST">
+  <h1>Add Cat</h1>
+  <br>
+  <table border="2" width="70%" cellpadding="2">
+    <tr>
+      <td>Cat Name</td>
+      <td><input type="text" th:name="name"></td>
+    </tr>
+    <tr>
+      <td>Cat Sex</td>
+      <td><input type="text" th:name="sex"></td>
+    </tr>
+    <tr>
+      <td>Cat Age</td>
+      <td><input type="number" th:name="age"></td>
+    </tr>
+    <tr>
+      <td>Cat Color</td>
+      <td><input type="text" th:name="color"></td>
+    </tr>
+    <tr>
+      <td>Is Owner Known</td>
+      <td><input type="checkbox" th:name="ownerKnown"></td>
+    </tr>
+
+  </table>
+  <br/> <input type="submit" value="Add Cat">
+</form>
+</body>
+</html>

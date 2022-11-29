@@ -1,0 +1,35 @@
+<!Doctype html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <meta charset="UTF-8">-->
+    <title>Display Cat Page</title>
+</head>
+<body>
+
+<h1>Cat Members</h1><br>
+<div th:text="${msg}"></div>
+<br>
+<table border="2" width="70%" cellpadding="2">
+    <tr>
+        <th>Id</th>
+        <th>Cat Name</th>
+        <th>Cat Sex</th>
+        <th>Cat Age</th>
+        <th>Cat Color</th>
+        <th>Edit</th>
+    </tr>
+    <tr th:each="cat: ${cats}">
+        <td th:text="${cat.id}"></td>
+        <td th:text="${cat.name}"></td>
+        <td th:text="${cat.sex}"></td>
+        <td th:text="${cat.age}"></td>
+        <td th:text="${cat.color}"></td>
+        <td><a th:href="@{'/cat/editForm/' + ${cat.id}}">Edit</a></td>
+    </tr>
+    </th:forEach>
+</table>
+<br/>
+<a th:href="@{/cat/addForm}">Add new cat member</a>
+</body>
+</html>

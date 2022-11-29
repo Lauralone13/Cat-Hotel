@@ -1,0 +1,30 @@
+<!Doctype html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <meta charset="UTF-8">-->
+    <title>Cat Hotel</title>
+</head>
+<body>
+
+<style>
+div.a {
+text-align: center;
+font-family: Arial, Verdana
+font-size: 40px;
+color: #12125e;
+}
+</style>
+
+<div class="a">
+    <p>
+    Welcome to our lovely little family at the<br><br>
+
+    <strong>Cat Hotel</strong><br><br>
+    <em>Just like home - <span th:text="${appName}"></span></em><br><br>
+
+    Wanna check out our furry members? <a href="/cat/display">click here</a>
+    </p>
+</div>
+</body>
+</html>
